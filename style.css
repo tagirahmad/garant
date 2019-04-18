@@ -116,6 +116,10 @@ header span {
 	background-color: #f4f4f4;
 }
 
+.small {
+	font-size: 20px
+}
+
 .service p i{
 	color: #000;
   font-weight: 300;
@@ -162,7 +166,7 @@ header span {
 }
 
 .service .row2{
-	width: 70%
+	/* width: 70% */
 }
 
 .service .row2 .item i {
@@ -423,7 +427,8 @@ header span {
 	border: none;
 	float: right;
 	color: #fff;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5)
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	border-radius: 3px
 }
 
 .contacts input.button:hover {
@@ -464,18 +469,6 @@ footer .item {
 
 footer .item i {
 	margin-right: 10px
-}
-footer .row {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	-ms-align-items: center;
-	align-items: center;
-	justify-content: center;
-	margin-bottom: 0;
-	padding: 20px 0;
 }
 
 footer .row .item {
@@ -546,27 +539,33 @@ footer .row .item:last-child {
 		width: 70%
 	}
 
-	.clients .row {
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
-		justify-content: space-around;
-		-ms-align-items: center;
-		align-items: center;
-		flex-direction: column;
+	.service .row .item {
+		width: 50%;
+		font-size: 12px;
+		margin-right: 0
 	}
 
-	.clients .row {
-		flex-wrap: wrap;
+	.advantages .row .item {
+		margin-right: 0;
+		margin-top: 0;
+		width: 51%;
+		font-size: 12px;
+		margin-top: 10px;
 	}
 
-	.client {
-		margin-top: 40px !important;
+	.court .row .item {
+		margin-right: 0;
+		margin-top: 10px;
+		width: 50%;
+		font-size: 12px;
 	}
 
-	.clients .row img {
-		width: 50%
+	footer {
+		padding: 30px 30px
 	}
+
+	footer .row .item {
+		margin-right: 0;
+	}
+
 }
