@@ -399,7 +399,9 @@ header span {
 	float: right;
 	color: #fff;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
-	border-radius: 3px
+	border-radius: 3px;
+	transition: .4s;
+	cursor: pointer;
 }
 
 .contacts input.button:hover {
@@ -528,6 +530,10 @@ footer .row .item:last-child {
 		padding: 20px 0
 	}
 
+	.work .row1 {
+		margin-top: 0;
+	}
+
 	.work .row .item {
 		width: 50%;
 		font-size: 12px;
@@ -536,6 +542,18 @@ footer .row .item:last-child {
 
 	.feedback {
 		padding: 20px 0
+	}
+
+	.feedback #t_uppr {
+		margin-bottom: 0;
+	}
+
+	.our_services .benifits {
+    margin-top: 40px;
+	}
+
+	.our_services .benifits .list ul {
+		margin-top: 30px
 	}
 
 	.advantages {
@@ -563,6 +581,10 @@ footer .row .item:last-child {
 
 	.court h3 {
 		margin: 0 !important
+	}
+
+	.court .row {
+		margin-top: 30px
 	}
 
 	.court .row .item {
