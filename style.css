@@ -95,12 +95,11 @@ header span {
 }
 
 .orange_line {
-	color: grey;
-	border-color:grey;
 	background-color: grey !important;
+	border: none;
 	height: 4px;
 	width: 100px;
-	margin-bottom: 80px;
+	margin-bottom: 60px;
 }
 
 /*.team hr {
