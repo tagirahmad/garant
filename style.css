@@ -526,6 +526,12 @@ footer .row .item:last-child {
 		padding: 20px 0
 	}
 
+	.work  p .d-flex {
+		display: flex;
+    justify-content: center;
+    align-items: center;
+	}
+
 	.become-simple {
 		padding: 20px 0
 	}
