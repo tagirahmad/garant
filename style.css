@@ -7,6 +7,7 @@ header{
 	background-position: center center;
 	width: 100%;
 	height: 100%;
+	background-size: cover;
 }
 nav{
 	width: 100%;
@@ -110,80 +111,59 @@ header span {
 	margin-bottom: 107px;
 }*/
 
-.service {
+.work {
 	padding-top: 100px;
 	padding-bottom: 100px;
 	background-color: #f4f4f4;
 }
 
 .small {
-	font-size: 20px
+	font-size: 20px !important
 }
 
-.service p i{
+.work p i{
 	color: #000;
   font-weight: 300;
 }
 
-.service h3 {
-	/* text-transform: uppercase; */
-}
-
-/*.service hr {
-	color: #fcac45;
-	background-color: #fcac45 !important;
-	height: 4px;
-	width: 100px;
-	margin-bottom: 60px;
-}*/
-
-.service  .row {
+.work  .row {
 	margin-top: 25px;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 }
 
-.service .row1 {
-	/* width: 70% */
+.work .row1 {
 	margin-top: 60px;
 }
 
-.service .row1 .item{
+.work .row1 .item{
 	margin-right: 30px
 }
 
-.service .row1 .item:last-child{
+.work .row1 .item:last-child{
 	margin-right: 0
 }
 
-.service .row1 .item i {
+.work .row1 .item i {
 }
 
-.service .row1 .item img {
+.work .row1 .item img {
 	width: 50px;
 	height: 50px
 }
 
-.service .row2{
-	/* width: 70% */
-}
-
-.service .row2 .item i {
-}
-
-.service  .row .item {
+.work  .row .item {
 	width: 22%;
 	font-size: 18px;
 	padding: 20px
-	/* background-color: #aea9a9; */
 }
 
-.service  .row .item i {
+.work  .row .item i {
 	text-align: center;
 }
 
-.service  .row .flex {
+.work  .row .flex {
 	display: -webkit-flex;
 	display: -ms-flex;
 	display: flex;
@@ -192,7 +172,7 @@ header span {
 	flex-wrap: wrap
 }
 
-.service  .row p {
+.work  .row p {
 	color: black;
 }
 
@@ -234,8 +214,8 @@ header span {
 .advantages {
 	background-color: #646464;
 	color: #fff;
-	padding-top: 20px;
-	padding-bottom: 45px;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 .advantages i{
@@ -248,8 +228,8 @@ header span {
 }
 
 .advantages h3{
-	margin-bottom: 40px;
-	margin-top: 40px;
+	/* margin-bottom: 40px;
+	margin-top: 40px; */
 }
 
 .advantages .row {
@@ -275,8 +255,8 @@ header span {
 
 .court{
 	background-color: #f4f4f4;
-	padding-top: 20px;
-	padding-bottom: 55px;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 .court h4 {
@@ -322,13 +302,13 @@ header span {
 	font-weight: 300
 }
 
-.clients {
+.become-simple {
 	background-color: #646464;;
 	padding-top: 60px;
 	padding-bottom: 60px
 }
 
-.clients p {
+.become-simple p {
 	font-size: 19px;
 	color: #fff;
 	font-weight: 300
@@ -338,19 +318,11 @@ header span {
 	margin-top: 40px !important;
 }
 
-.clients h3 {
+.become-simple h3 {
 	color: #fff;
 }
 
-/*.clients hr {
-	color: #fcac45;
-	background-color: #fcac45 !important;
-	height: 4px;
-	width: 100px;
-	margin-bottom: 60px;
-}*/
-
-.clients .row {
+.become-simple .row {
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -359,10 +331,9 @@ header span {
 	justify-content: space-around;
 	-ms-align-items: center;
 	align-items: center;
-	/*flex-wrap: wrap;*/
 }
 
-.clients .row img {
+.become-simple .row img {
 	width: 100%
 }
 
@@ -384,36 +355,36 @@ header span {
 	padding: 0;
 }
 
-.testimonials {
+.feedback {
 	background-color: #646464;
 	padding-top: 60px;
 	padding-bottom: 30px;
 }
 
-.testimonials p {
+.feedback p {
 	color: #fff;
 	font-weight: 300
 }
 
-.testimonials h3 {
+.feedback h3 {
 	color: #fff;
 	text-transform: uppercase;
 }
 
-.testimonials #t_uppr{
+.feedback #t_uppr{
 	text-transform: uppercase;
 	font-size: 20px;
 	margin-bottom: 30px
 }
 
-.testimonials .row {
+.feedback .row {
 	color: #fff
 }
 
-.testimonials .questions{
+.feedback .questions{
 	font-size: 17px;
 	color: #fff;
-	font-weight: 300;
+	font-weight: 500;
 	margin-top: 40px
 }
 
@@ -499,7 +470,7 @@ footer .row .item:last-child {
 		font-size: 3.2rem
 	}
 
-	.clients .row {
+	.become-simple .row {
 		display: -webkit-flex;
 		display: -moz-flex;
 		display: -ms-flex;
@@ -509,10 +480,6 @@ footer .row .item:last-child {
 		-ms-align-items: center;
 		align-items: center;
 	}
-
-	/*.clients .row {
-		flex-wrap: wrap;
-	}*/
 
 }
 
@@ -535,22 +502,67 @@ footer .row .item:last-child {
 
 
 @media (max-width: 600px) {
-	.about-us img {
-		width: 70%
+
+	header .motto {
+		margin-top: 100px;
+		padding-bottom: 100px;
 	}
 
-	.service .row .item {
+	p, ul {
+		font-size: 12px !important
+	}
+
+	h3 {
+		font-size: 1.92rem
+	}
+
+	.orange_line {
+		margin-bottom: 0
+	}
+
+	.work {
+		padding: 20px 0
+	}
+
+	.become-simple {
+		padding: 20px 0
+	}
+
+	.work .row .item {
 		width: 50%;
 		font-size: 12px;
 		margin-right: 0
 	}
 
+	.feedback {
+		padding: 20px 0
+	}
+
+	.advantages {
+		padding: 20px 0
+	}
+
+	h3 {
+		margin: 0 !important
+	}
+
+	.advantages .row {
+		margin-top: 20px;
+	}
+
 	.advantages .row .item {
 		margin-right: 0;
-		margin-top: 0;
 		width: 51%;
 		font-size: 12px;
 		margin-top: 10px;
+	}
+
+	.court {
+		padding: 20px 0
+	}
+
+	.court h3 {
+		margin: 0 !important
 	}
 
 	.court .row .item {
@@ -558,6 +570,23 @@ footer .row .item:last-child {
 		margin-top: 10px;
 		width: 50%;
 		font-size: 12px;
+	}
+
+	.conditions{
+		padding: 20px 0
+	}
+
+	.conditions .item {
+		width: 100%
+	}
+
+	.contacts {
+		padding-top: 20px;
+		padding-bottom: 50px
+	}
+
+	.contacts form {
+		margin-top: 20px
 	}
 
 	footer {
