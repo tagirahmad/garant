@@ -506,6 +506,10 @@ footer .row .item:last-child {
 		padding-bottom: 100px;
 	}
 
+	nav .brand-logo {
+    padding-left: 0px;
+	}
+
 	p, ul {
 		font-size: 12px !important
 	}
