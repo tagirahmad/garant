@@ -2,6 +2,14 @@ header {
 	height: 100vh
 }
 
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+	font-weight: 300
+}
+
 header{
 	background: url(img/bg.jpg) 50% 50% no-repeat;
 	background-position: center center;
@@ -423,25 +431,22 @@ footer {
 	color: #fff
 }
 
+footer .title span {
+	font-weight: bold;
+}
+
 footer .d-flex {
 	display: flex;
 	align-items: center;
 }
 
-footer .item {
-	margin-top: 20px
-}
-
 footer .item i {
-	margin-right: 10px
+	margin-right: 10px;
+	font-size: 30px
 }
 
 footer .row {
 	padding: 40px 0
-}
-
-footer .row .item {
-	margin-right: 10px;
 }
 
 footer .row .item:hover {
