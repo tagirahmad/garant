@@ -112,8 +112,7 @@ header span {
 }*/
 
 .work {
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding: 40px 0;
 	background-color: #f4f4f4;
 }
 
@@ -178,8 +177,8 @@ header span {
 
 .our_services {
 	background-color: #f4f4f4;
-	padding-top: 20px;
-	padding-bottom: 55px
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 .our_services p {
@@ -206,7 +205,7 @@ header span {
 .our_services .benifits .list ul{
 	line-height: 2;
 	margin: 0 auto;
-	margin-top: 55px;
+	margin-top: 40px;
 	font-weight: 300;
 	font-size: 18px
 }
@@ -214,8 +213,7 @@ header span {
 .advantages {
 	background-color: #646464;
 	color: #fff;
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding: 40px 0
 }
 
 .advantages i{
@@ -255,8 +253,7 @@ header span {
 
 .court{
 	background-color: #f4f4f4;
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding: 40px 0
 }
 
 .court h4 {
@@ -284,8 +281,7 @@ header span {
 .conditions {
 	background-color: #646464;
 	color: #fff;
-	padding-top: 60px;
-	padding-bottom: 80px;
+	padding: 40px 0
 }
 
 .conditions .item {
@@ -304,18 +300,14 @@ header span {
 
 .become-simple {
 	background-color: #646464;;
-	padding-top: 60px;
-	padding-bottom: 60px
+	padding-top: 40px;
+	padding-bottom: 40px
 }
 
 .become-simple p {
 	font-size: 19px;
 	color: #fff;
 	font-weight: 300
-}
-
-.client {
-	margin-top: 40px !important;
 }
 
 .become-simple h3 {
@@ -338,8 +330,8 @@ header span {
 }
 
 .works {
-	padding-top: 65px;
-	padding-bottom: 55px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 	background-color: #f4f4f4
 }
 
@@ -357,8 +349,8 @@ header span {
 
 .feedback {
 	background-color: #646464;
-	padding-top: 60px;
-	padding-bottom: 30px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 .feedback p {
@@ -389,7 +381,8 @@ header span {
 }
 
 .contacts {
-	padding: 100px 0;
+	padding-top: 20px;
+	padding-bottom: 70px;
 }
 
 .contacts input.button {
@@ -442,6 +435,10 @@ footer .item {
 
 footer .item i {
 	margin-right: 10px
+}
+
+footer .row {
+	padding: 40px 0
 }
 
 footer .row .item {
