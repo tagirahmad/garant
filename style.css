@@ -1,5 +1,6 @@
 header {
-	height: 100vh
+	/* height: 100vh; */
+
 }
 
 body {
@@ -16,17 +17,21 @@ header{
 	width: 100%;
 	height: 100%;
 	background-size: cover;
+	font-family: 'Open Sans', sans-serif;
 }
 nav{
 	width: 100%;
-	background-color: #646464
+	background-color: #222
 }
 nav .brand-logo{
 	padding-left: 20px;
 }
 
 nav ul li a:hover {
-	border-bottom: 3px solid #fcac45;
+    border-bottom: 3px solid #fefefe;
+}
+nav ul a:hover {
+    background-color: rgba(0,0,0,0.3);
 }
 
 header h1 , p {
@@ -185,7 +190,7 @@ header span {
 .our_services {
 	background-color: #f4f4f4;
 	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-bottom: 50px;
 }
 
 .our_services p {
@@ -285,23 +290,23 @@ header span {
 	font-weight: 300;
 }
 
-.conditions {
+.transactions {
 	background-color: #646464;
 	color: #fff;
 	padding: 40px 0
 }
 
-.conditions .item {
+.transactions .item {
 	width: 70%;
 	margin: 0 auto;
 }
 
-.conditions .item .title {
+.transactions .item .title {
 	font-size: 30px;
 	font-weight: bold;
 }
 
-.conditions .item p {
+.transactions .item p {
 	font-weight: 300
 }
 
@@ -513,6 +518,15 @@ footer .row .item:last-child {
 
 	nav .brand-logo {
     padding-left: 0px;
+		font-size: 15px;
+		font-family: 'Merriweather Sans'
+	}
+	.motto h4{
+    background-color: rgba(0, 0, 0, 0.3)
+	}
+
+	.motto p{
+    background-color: rgba(0, 0, 0, 0.3)
 	}
 
 	p, ul {
@@ -605,11 +619,11 @@ footer .row .item:last-child {
 		font-size: 12px;
 	}
 
-	.conditions{
+	.transactions{
 		padding: 20px 0
 	}
 
-	.conditions .item {
+	.transactions .item {
 		width: 100%
 	}
 

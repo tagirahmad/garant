@@ -5,32 +5,38 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Garant</title>
+	<title>Guarantor assistant</title>
 </head>
 <body>
 	<header>
 		<!-- <div class="container"> -->
-			<nav>
-				<div class="nav-wrapper">
-			      <a href="#" class="brand-logo">Garant</a>
-			      <!-- <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
-			      <!-- <ul id="nav-mobile" class="right hide-on-med-and-down">
-			        <li><a href="#">Home</a></li>
-			        <li><a href="#">About</a></li>
-			        <li><a href="#">Services</a></li>
-			        <li><a href="#">Portfolio</a></li>
-			        <li><a href="#">Testimonals</a></li>
-			        <li><a href="#">Contact</a></li>
-			      </ul>
-			      <ul id="mobile-demo" class="sidenav">
-				        <li><a href="#">Home</a></li>
-				        <li><a href="#">About</a></li>
-				        <li><a href="#">Support</a></li>
-			      	</ul> -->
-			    </div>
+			<nav id='menu'>
+				<div class="container">
+					<div class="nav-wrapper">
+				      <a href="#" class="brand-logo">Guarantor assistant</a>
+				      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+				      <ul id="nav-mobile" class="right hide-on-med-and-down">
+				        <li><a href="#" data-anchor="work" class='gta'>Main</a></li>
+				        <li><a href="#" data-anchor="feedbacks" class='gta'>Feedbacks</a></li>
+				        <li><a href="#" data-anchor="service" class='gta'>Services</a></li>
+				        <li><a href="#" data-anchor="advantages" class='gta'>Advantages</a></li>
+				        <li><a href="#" data-anchor="court" class='gta'>Arbitration Court</a></li>
+				        <li><a href="#" data-anchor="contact" class='gta'>Contact</a></li>
+				      </ul>
+				      <ul id="mobile-demo" class="sidenav">
+								<li><a href="#yak1">Main</a></li>
+								<li><a href="#yak2">Feedbacks</a></li>
+								<li><a href="#yak3">Services</a></li>
+								<li><a href="#yak4">Advantages</a></li>
+								<li><a href="#yak5">Arbitration Court</a></li>
+								<li><a href="#yak6">Contact</a></li>
+				      	</ul>
+				    </div>
+					</div>
 			</nav>
 		<!-- </div> -->
 		<div class="container">
@@ -100,7 +106,7 @@
 			</div>
 		</div>
 	</section> -->
-	<section class="work">
+	<section class="work" id='work'>
 		<div class="container">
 			<h3 class="center-align">How do we work?</h3>
 			<hr class="orange_line">
@@ -232,7 +238,7 @@
 				</div>
 		</div>
 	</section>
-	<section class="feedback">
+	<section class="feedback" id='feedbacks'>
 		<div class="container">
 			<h3 class="center-align">Feedbacks on garant-service</h3>
 			<hr class="orange_line">
@@ -264,7 +270,7 @@
 		</div>
 	</section>
 
-	<section class="our_services">
+	<section class="our_services" id='service'>
 		<div class="container">
 			<h3 class="center-align">OUR SERVICES</h3>
 			<hr class="orange_line">
@@ -292,7 +298,7 @@
 		</div>
 	</section>
 
-	<section class="advantages">
+	<section class="advantages" id='advantages'>
 		<div class="container">
 			<h3 class="center-align">ADVANTAGES</h3>
 			<hr class="orange_line">
@@ -373,7 +379,7 @@
 		</div>
 	</section>
 
-	<section class="court">
+	<section class="court" id='court'>
 		<div class="container">
 			<h3 class="center-align">
 				ARBITRATION COURT
@@ -425,7 +431,7 @@
 		</div>
 	</section>
 
-	<section class="conditions">
+	<section class="transactions">
 		<div class="container">
 			<div class="item">
 				<div class="title">
@@ -453,7 +459,7 @@
 	</section>
 
 
-	<section class="contacts">
+	<section class="contacts" id='contact'>
 		<div class="container">
 			<h3 class="center-align">Contact us</h3>
 			<hr class="orange_line">
@@ -522,6 +528,26 @@
 	<script>
 		$(document).ready(function(){
 		    $('.sidenav').sidenav();
+		});
+
+		// $(document).ready(function(){
+    // $("#menu").on("click","a", function (event) {
+    //     event.preventDefault();
+    //     var id  = $(this).attr('href'),
+    //         top = $(id).offset().top;
+    //     $('body,html').animate({scrollTop: top}, 1500);
+		//     });
+		// });
+		$('.gta').click(function(e) {
+
+			e.preventDefault();
+
+			var $id = $(this).data('anchor');
+
+			// $('#mob_menu').addClass('hide');
+
+			$('html, body').animate({scrollTop: $('#' + $id).offset().top}, 400);
+
 		});
 	</script>
 </body>
