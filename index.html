@@ -45,32 +45,30 @@
 	</div>
 
 	<header>
-		<!-- <div class="container"> -->
-			<nav id='menu'>
-				<div class="container">
-					<div class="nav-wrapper">
-				      <a href="#" class="brand-logo">Guarantor assistant</a>
-				      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-				      <ul id="nav-mobile" class="right hide-on-med-and-down">
-				        <li><a href="#" data-anchor="work" class='gta'>Main</a></li>
-				        <li><a href="#" data-anchor="feedbacks" class='gta'>Feedbacks</a></li>
-				        <li><a href="#" data-anchor="service" class='gta'>Services</a></li>
-				        <li><a href="#" data-anchor="advantages" class='gta'>Advantages</a></li>
-				        <li><a href="#" data-anchor="court" class='gta'>Arbitration Court</a></li>
-				        <li><a href="#" data-anchor="contact" class='gta'>Contact</a></li>
-				      </ul>
-				      <ul id="mobile-demo" class="sidenav">
-								<li><a href="#yak1">Main</a></li>
-								<li><a href="#yak2">Feedbacks</a></li>
-								<li><a href="#yak3">Services</a></li>
-								<li><a href="#yak4">Advantages</a></li>
-								<li><a href="#yak5">Arbitration Court</a></li>
-								<li><a href="#yak6">Contact</a></li>
-				      	</ul>
-				    </div>
-					</div>
-			</nav>
-		<!-- </div> -->
+		<nav id='menu'>
+			<div class="container">
+				<div class="nav-wrapper">
+			      <a href="#" class="brand-logo">Guarantor assistant</a>
+			      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+			      <ul id="nav-mobile" class="right hide-on-med-and-down">
+			        <li><a href="#" data-anchor="work" class='gta'>Main</a></li>
+			        <li><a href="#" data-anchor="feedbacks" class='gta'>Feedbacks</a></li>
+			        <li><a href="#" data-anchor="service" class='gta'>Services</a></li>
+			        <li><a href="#" data-anchor="advantages" class='gta'>Advantages</a></li>
+			        <li><a href="#" data-anchor="court" class='gta'>Arbitration Court</a></li>
+			        <li><a href="#" data-anchor="contact" class='gta'>Contact</a></li>
+			      </ul>
+			      <ul id="mobile-demo" class="sidenav">
+							<li><a href="#" data-anchor="work" class='gta'>Main</a></li>
+							<li><a href="#" data-anchor="feedbacks" class='gta'>Feedbacks</a></li>
+							<li><a href="#" data-anchor="service" class='gta'>Services</a></li>
+							<li><a href="#" data-anchor="advantages" class='gta'>Advantages</a></li>
+							<li><a href="#" data-anchor="court" class='gta'>Arbitration Court</a></li>
+							<li><a href="#" data-anchor="contact" class='gta'>Contact</a></li>
+			      	</ul>
+			    </div>
+				</div>
+		</nav>
 		<div class="container">
 			<div class="motto">
 				<p class="center-align">GUARANTEE OF A SECURE TRANSACTION</p>
@@ -576,10 +574,9 @@
 
 			var $id = $(this).data('anchor');
 
-			// $('#mob_menu').addClass('hide');
+			$('#mobile-demo').addClass('hide');
 
 			$('html, body').animate({scrollTop: $('#' + $id).offset().top}, 400);
-
 		});
 	</script>
 
