@@ -12,6 +12,35 @@
 	<title>Guarantor assistant</title>
 </head>
 <body>
+
+	<div id="overlay">
+    <div class="popup">
+			<h3 class="center-align">Contact us</h3>
+			<form method="post" action="handler.php" id='auth' target="area">
+				<div class="container">
+					<div class="row">
+						<div class="col l6 m6 s12">
+							<label for="first_name">First Name</label>
+							<input type="text" id='first_name' name="name" form='auth'>
+						</div>
+						<div class="col l6 m6 s12">
+							<label for="email">Email</label>
+							<input type="email" id='email' name='emal' form="auth">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12">
+							<label for="message">Message</label>
+							<textarea id='message' name="message" cols="40" rows="50" form="auth"></textarea>
+						</div>
+					</div>
+					<input type="submit" value='Send' class="button" form='auth'>
+				</div>
+			</form>
+			<button class="close" title="Закрыть" onclick="document.getElementById('overlay').style.display='none';"></button>
+    </div>
+	</div>
+
 	<header>
 		<!-- <div class="container"> -->
 			<nav id='menu'>
@@ -521,8 +550,8 @@
 
 
 	<script
-			  src="https://code.jquery.com/jquery-3.3.1.slim.js"
-			  integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 			  crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<script>
@@ -549,6 +578,11 @@
 			$('html, body').animate({scrollTop: $('#' + $id).offset().top}, 400);
 
 		});
+	</script>
+
+	<script type="text/javascript">
+		var delay_popup = 3000;
+		setTimeout("document.getElementById('overlay').style.display='block'", delay_popup);
 	</script>
 </body>
 </html>
