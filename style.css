@@ -583,6 +583,23 @@ footer .row .item:last-child {
 	margin-right: 0;
 }
 
+footer .copyright {
+	float: left;
+	font-size: 13px;
+	color: #909090;
+}
+
+footer .terms{
+	float: right;;
+	font-size: 13px;
+	color: #fff
+}
+
+footer .terms a {
+	text-decoration: none;
+	color: #909090;
+}
+
 
 
 
@@ -762,6 +779,10 @@ footer .row .item:last-child {
 
 	footer .row .item {
 		margin-right: 0;
+	}
+
+	footer .terms {
+    float: left;
 	}
 
 }

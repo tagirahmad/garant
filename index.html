@@ -18,25 +18,25 @@
 				<i class="material-icons d-flex small">mail</i>
 				<h3 class="center-align">Get in touch</h3>
 			</div>
-			<form method="post" action="handler.php" id='auth' target="area">
+			<form method="post" id='form'>
 				<div class="container">
 					<div class="row">
 						<div class="col l6 m6 s12">
 							<label for="first_name">First Name</label>
-							<input type="text" id='first_name' name="name" form='auth'>
+							<input type="text" id='first_name' name="name">
 						</div>
 						<div class="col l6 m6 s12">
 							<label for="email">Email</label>
-							<input type="email" id='email' name='emal' form="auth">
+							<input type="email" id='email' name='emal'>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col s12">
 							<label for="message">Message</label>
-							<textarea id='message' name="message" cols="40" rows="50" form="auth"></textarea>
+							<textarea id='message' name="text" cols="40" rows="50"></textarea>
 						</div>
 					</div>
-					<input type="submit" value='Send' class="button" form='auth'>
+					<input type="submit" value='Send' class="button">
 				</div>
 			</form>
 			<button class="close" title="Закрыть" onclick="document.getElementById('overlay').style.display='none';"></button>
@@ -184,20 +184,20 @@
 			</p>
 			<div class="row">
 				<div class="col l4 m6 s12">
-					<h4 class="center-align">Customer 1</h4>
+					<h4 class="center-align">Brian Slucker</h4>
 					<p class="center-align">
 						I have worked with garant-servis for several times. They always provide top-class services. I am grateful for that, and I hope that in the future, I will employ your services once again!
 
 					</p>
 				</div>
 				<div class="col l4 m6 s12">
-					<h4 class="center-align">Customer 2</h4>
+					<h4 class="center-align">Sara Blomberg</h4>
 					<p class="center-align">
 						I have been working with this guarantor for more than two years. For such a long period I haven't noticed anything wrong. I'm quite pleased with their work. As a matter of fact, they work 24/7, which is pretty cool. You can't go wrong when you work with them.
 					</p>
 				</div>
 				<div class="col l4 m6 s12">
-					<h4 class="center-align">Customer 3</h4>
+					<h4 class="center-align">Abigail Berrious</h4>
 					<p class="center-align">
 						We have conducted a few transactions. I am fully satisfied with the work of this company. Everything went well! I would recommend this company to everyone!
 					</p>
@@ -400,25 +400,25 @@
 		<div class="container">
 			<h3 class="center-align">Contact us</h3>
 			<hr class="orange_line">
-			<form method="post" action="handler.php" id='auth' target="area">
+			<form method="post" id='form'>
 				<div class="container">
 					<div class="row">
 						<div class="col l6 m6 s12">
 							<label for="first_name">First Name</label>
-							<input type="text" id='first_name' name="name" form='auth'>
+							<input type="text" id='first_name' name="name">
 						</div>
 						<div class="col l6 m6 s12">
 							<label for="email">Email</label>
-							<input type="email" id='email' name='emal' form="auth">
+							<input type="email" id='email' name='emal'>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col s12">
 							<label for="message">Message</label>
-							<textarea id='message' name="message" cols="40" rows="50" form="auth"></textarea>
+							<textarea id='message' name="text" cols="40" rows="50"></textarea>
 						</div>
 					</div>
-					<input type="submit" value='Send' class="button" form='auth'>
+					<input type="submit" value='Send' class="button">
 				</div>
 			</form>
 		</div>
@@ -452,6 +452,14 @@
 					</div>
 				</div>
 			</div>
+			<div class="row">
+				<div class="copyright">
+					© 2018 centr-garant.com. Allrights reserved
+				</div>
+				<div class="terms">
+					<p><a href="">Privacy Policy</a>—<a href="">Terms of Use</a></p>
+				</div>
+			</div>
 		</div>
 	</footer>
 
@@ -462,7 +470,8 @@
 			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 			  crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-	<script>
+	<script src="js/script.js"></script>
+	<!-- <script>
 		$(document).ready(function(){
 		    $('.sidenav').sidenav();
 		});
@@ -476,6 +485,6 @@
 	<script type="text/javascript">
 		var delay_popup = 3000;
 		setTimeout("document.getElementById('overlay').style.display='block'", delay_popup);
-	</script>
+	</script> -->
 </body>
 </html>
