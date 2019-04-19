@@ -14,7 +14,7 @@
 }
 
 .popup {
-    top: 25%;
+    top: 15%;
     left: 0;
     right: 0;
     font-size: 14px;
@@ -76,6 +76,28 @@
 /* кнопка закрытия при наведении */
 .close:hover {
     background-color: rgba(98, 88, 88, 0.8);
+}
+
+.popup .d-flex {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.popup .get-in-touch{
+	margin: 30px 0;
+}
+
+.popup .get-in-touch .small {
+	font-size: 30px !important
+}
+
+.popup .get-in-touch h3 {
+	margin: 10px 0;
+	font-size: 1.92rem;
+	line-height: 100%;
 }
 
 
@@ -544,7 +566,8 @@ footer .item i {
 }
 
 footer .row {
-	padding: 40px 0
+	padding: 40px 0;
+	margin-bottom: 0;
 }
 
 footer .row .item:hover {
